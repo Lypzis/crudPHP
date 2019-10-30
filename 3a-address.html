@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="public/3b-address.js"></script>
+  <link rel="stylesheet" href="public/3c-address.css">
+</head>
+<body>
+  <!-- [SYSTEM MESSAGE] -->
+  <div id="ab_msg"></div>
+
+  <!-- [ADDRESS BOOK] -->
+  <h1>ADDRESS BOOK</h1> 
+  <div class="container">
+    <input type="button" class="green" value="Reload" onclick="ab.read()"/>
+    <input type="button" class="green" value="Add Entry" onclick="ab.prime(0)"/>
+  </div>
+  <div id="addresses"></div>
+
+  <!-- [ADD/EDIT ENTRY] -->
+  <form id="ab_form" class="container" style="display:none;" method="post" target="_self">
+	<h4 id="ab_form_head"></h4>
+    ID (This will be hidden on a production system) <input type="text" id="form_id" name="id" readonly/><br>
+    Address <input type="text" id="form_address" name="address" required/><br>
+    <input type="button" value="Cancel" class="red" onclick="document.getElementById('ab_form').style.display='none';"/>
+    <input type="button" value="Save" id="btn_save" class="green"/>
+  </form>
+</body>
+</html>

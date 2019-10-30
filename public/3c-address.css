@@ -1,0 +1,18 @@
+/* GLOBAL */
+html, body, input{ font-family:arial; font-size:1em; }
+
+div.container, form.container{ margin:10px 0; padding:10px; background:#f3f3f3; }
+
+/* INPUTS */
+input[type=button]{ padding:10px; background:#eee; border:1px solid #ccc; cursor:pointer; }
+
+input[type=text]{ margin:10px 0; }
+
+input.red, div.red{ background:#f7e1d9; }
+
+input.green, div.green{ background:#e5f7d9; }
+
+/* ADDRESSES */
+#addresses tr td{ padding:10px; }
+
+#addresses tr:nth-of-type(odd){ background: #f2f2f2; }
